@@ -10,7 +10,7 @@ from requests.models import Response
 from tldextract import extract
 
 
-name = 'serverleak'
+name = 'serverleaks'
 dependencies = ['network']
 required_keys = ['final_url']
 
