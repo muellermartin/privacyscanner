@@ -3,7 +3,7 @@ from privacyscanner.scanmodules.chromedevtools.extractors import FinalUrlExtract
     GoogleAnalyticsExtractor, CookiesExtractor, RequestsExtractor, TLSDetailsExtractor, \
     CertificateExtractor, ThirdPartyExtractor, InsecureContentExtractor, \
     FailedRequestsExtractor, SecurityHeadersExtractor, TrackerDetectExtractor, \
-    CookieStatsExtractor, JavaScriptLibsExtractor, ScreenshotExtractor, ImprintExtractor
+    CookieStatsExtractor, JavaScriptLibsExtractor, ScreenshotExtractor, ImprintExtractor, GeneratorTagExtractor
 from privacyscanner.scanmodules.chromedevtools.utils import TLDEXTRACT_CACHE_FILE, parse_domain
 from privacyscanner.utils import file_is_outdated
 
@@ -18,7 +18,7 @@ EXTRACTOR_CLASSES = [FinalUrlExtractor, GoogleAnalyticsExtractor,
                      InsecureContentExtractor, FailedRequestsExtractor,
                      SecurityHeadersExtractor, TrackerDetectExtractor,
                      CookieStatsExtractor, JavaScriptLibsExtractor,
-                     ScreenshotExtractor, ImprintExtractor]
+                     ScreenshotExtractor, ImprintExtractor, GeneratorTagExtractor]
 
 
 def scan_site(result, logger, options, meta):
